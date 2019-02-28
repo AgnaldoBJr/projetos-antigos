@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agnaldoburgojunior.myclassv1" >
+
+    <application
+        android:name=".App.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activitys.Dashboard"
+            android:label="@string/title_activity_dashboard" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.TipoReferenciaView"
+            android:label="@string/title_activity_tipo_referencia_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.CursoView"
+            android:label="@string/title_activity_curso_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.DisciplinaView"
+            android:label="@string/title_activity_disciplina_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.FaltaView"
+            android:label="@string/title_activity_falta_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.TarefaView"
+            android:label="@string/title_activity_tarefa_view">
+        </activity>
+        <activity
+            android:name=".Activitys.TipoDeTarefaView"
+            android:label="@string/title_activity_tipo_de_tarefa_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.ReferenciaView"
+            android:label="@string/title_activity_referencia_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.NotasView"
+            android:label="@string/title_activity_nota_view" >
+        </activity>
+        <activity
+            android:name=".Activitys.FaltaView"
+            android:label="@string/title_activity_falta_view" >
+        </activity>
+        <activity
+            android:name=".Teste.TesteSpinner"
+            android:label="@string/title_activity_teste_spinner" >
+        </activity>
+        <activity
+            android:name=".Activitys.Abertura.SplashScreen"
+            android:label="@string/title_activity_splash_screen" >
+        </activity>
+    </application>
+
+</manifest>

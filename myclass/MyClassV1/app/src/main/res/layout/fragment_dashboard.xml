@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrolldash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_boasvindas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="false"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardMaxElevation="3dp"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/relativosaudacao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:id="@+id/saudacao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="24dp"
+                            android:textSize="24sp"
+                            android:textAlignment="center"
+                            android:paddingBottom="24dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ampm"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/saudacao"
+                            android:layout_toEndOf="@+id/saudacao"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="24dp"
+                            />
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_prox_tar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="false"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardMaxElevation="3dp"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:id="@+id/tv_model"
+                            android:text="Próximas Tarefas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="24dp"
+                            android:textSize="24sp"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:layout_below="@+id/tv_model"
+                            android:text="Veja suas tarefas para os próximos 7 Dias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="24dp"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/imageView"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/ic_search_black_36dp"
+                            android:layout_marginRight="10dp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                app:cardMaxElevation="3dp"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barchart_falta"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"/>
+
+                    <TextView
+                        android:textColor="@color/primaryColorText"
+                        android:layout_below="@+id/barchart_falta"
+                        android:id="@+id/tv_model"
+                        android:text="Acompanhe suas Notas aqui!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="24dp"
+                        android:textSize="24sp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:textColor="@color/primaryColorText"
+                        android:layout_below="@+id/tv_model"
+                        android:text="Gráfico das Médias de todas as suas Discplinas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="24dp"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="false"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardMaxElevation="3dp"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/relativespinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Selecione a Disciplina:"
+                                android:id="@+id/textView"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="18sp"
+                                android:textColor="@color/primaryColorText"
+                                android:textAlignment="center"
+                                android:layout_marginTop="5dp" />
+
+                            <Spinner
+                                android:id="@+id/spinnerDisciplina"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_below="@+id/textView"
+                                android:spinnerMode="dropdown"
+                                android:textAlignment="viewEnd">
+                            </Spinner>
+                        </LinearLayout>
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:layout_below="@+id/relativespinner"
+                            android:id="@+id/piechart_teste"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"/>
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:layout_below="@+id/piechart_teste"
+                            android:id="@+id/tv_model"
+                            android:text="Acompanhe suas faltas aqui!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="24dp"
+                            android:textSize="24sp"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:layout_below="@+id/tv_model"
+                            android:text="Gráfico de Frequência"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="24dp"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_ref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="false"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardMaxElevation="3dp"
+                    app:cardCornerRadius="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:id="@+id/tv_model"
+                            android:text="Dúvidas em alguma Tarefa?"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingTop="24dp"
+                            android:textSize="24sp"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:textColor="@color/primaryColorText"
+                            android:layout_below="@+id/tv_model"
+                            android:text="Consulte suas Referências para obter maior conhecimento! "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="16dp"
+                            android:paddingBottom="24dp"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/imageView"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/ic_import_contacts_black_36dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabmenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:menu_colorNormal="@color/colorPrimary"
+        app:menu_colorPressed="@color/colorPrimary"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"
+        app:menu_backgroundColor="#ccffffff"
+        app:menu_fab_label="Selecione a opção">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tp_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_book_white"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Tipos de Referências"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tp_tar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_assignment_white_18dp"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Tipos de Tarefas"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_book_white"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Referências"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_faltas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_format_list_numbered_white_18dp"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Faltas"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_assignment_white_18dp"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Tarefas"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_disc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_book_white_18dp"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Disciplinas"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_fab_curso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_school_white_18dp"
+            app:fab_size="mini"
+            app:fab_label="Cadastrar Cursos"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <!--
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fundo2"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DashBoard em Construção!"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dash2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conheça os cadastros do sistema..."
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"/>
+-->
+</RelativeLayout>

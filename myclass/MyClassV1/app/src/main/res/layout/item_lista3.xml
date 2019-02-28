@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:layout_margin="12dp">
+
+
+        <TextView
+            android:id="@+id/adp_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/adp_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16dp"
+            android:layout_below="@+id/adp_txt1"
+            android:layout_alignLeft="@+id/adp_txt1"
+            android:layout_alignStart="@+id/adp_txt1"
+            android:layout_marginTop="9dp" />
+
+        <TextView
+            android:id="@+id/adp_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16dp"
+            android:layout_below="@+id/adp_txt2"
+            />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/status_icon"
+            android:layout_below="@+id/adp_txt1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_check_circle_black_18dp"
+            android:visibility="invisible"/>
+
+
+</RelativeLayout>

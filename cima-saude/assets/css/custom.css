@@ -1,0 +1,44 @@
+/*.nav-main {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 70px;
+}
+*/
+
+
+@media (min-width: 992px){
+	.modal-lg {
+	    width: 1100px;
+	}
+}
+
+@media (min-width: 768px){
+.modal-md {
+    width: 800px;
+   
+}
+
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
+.nav-main .nav-main-heading {
+  padding: 22px 20px 6px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav-main a {
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.nav-main ul a {
+    padding: 8px 8px 8px 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);

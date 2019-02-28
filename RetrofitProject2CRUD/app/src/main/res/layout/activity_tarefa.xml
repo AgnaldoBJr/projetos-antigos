@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".TarefaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Codigo"
+            android:id="@+id/tarefa_codigo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:id="@+id/tarefa_descricao"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data de Cadastro"
+            android:id="@+id/tarefa_data"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:id="@+id/btn_salvar"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Excluir"
+                android:id="@+id/btn_excluir"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

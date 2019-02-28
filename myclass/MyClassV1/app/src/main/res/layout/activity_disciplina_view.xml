@@ -1,0 +1,372 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.agnaldoburgojunior.myclassv1.Activitys.DisciplinaView">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curso"
+                    android:id="@+id/textView2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp" />
+
+                <Spinner
+                    android:id="@+id/curso_disc_spinner"
+                    android:layout_width="250dp"
+                    android:layout_height="24sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="gravity"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dropdown" />
+                <!-- Fake TextView to use to set in an error state to allow an error to be shown for the TextView -->
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/nome_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_text_format"
+                android:hint="@string/nomeDisc"
+                android:allowUndo="false"
+                android:editable="true"
+                android:elegantTextHeight="false"
+                android:inputType="text"
+                android:maxLength="80" />
+
+            <EditText
+                android:id="@+id/qtaula_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_timelapse"
+                android:hint="@string/qtdAulasSemana"
+                android:editable="true"
+                android:maxLength="3"
+                android:inputType="numberDecimal" />
+
+            <!-- CheckBox DiaDaSemana-->
+            <TextView
+                android:id="@+id/diasDDisc"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dias da Disciplina"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaSeg"
+                        android:gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Seg"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/seg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaTer"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ter"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/ter" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaQua"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qua"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/qua" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaQui"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Qui"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/qui" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaSex"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sex"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/sex" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaSab"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sab"
+                        android:textSize="16sp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/sab" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/diaDom"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Dom"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:id="@+id/dom" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Fim do CheckBox DiaDaSemana-->
+
+
+            <EditText
+                android:id="@+id/carga_disciplina"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_timelapse"
+                android:hint=" Carga horária da disciplina"
+                android:maxLength="3"
+                android:inputType="numberDecimal" />
+
+            <LinearLayout
+
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/semestredisc"
+                    android:layout_width="match_parent"
+                    android:layout_height="24sp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="Semestre"/>
+
+                <Spinner
+                    android:id="@+id/semestre"
+                    android:layout_width="match_parent"
+                    android:layout_height="24sp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/professor_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_text_format"
+                android:hint=" Professor"
+                android:inputType="text"
+                android:maxLength="150" />
+
+            <EditText
+                android:id="@+id/email_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint=" E-mail do professor"
+                android:inputType="textEmailAddress"
+                android:maxLength="150" />
+
+            <EditText
+                android:id="@+id/conteudo_disciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_school"
+                android:hint=" Conteúdo da Disciplina"
+                android:inputType="text|textMultiLine"
+                android:editable="true"
+                android:maxLines="6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/met_aval"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Método Avaliativo"
+                    android:textSize="18sp"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/criar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_white_18dp"
+                    app:fab_size="mini"
+                    app:fab_label="Cadastrar Tipos de Referências"
+                    app:fab_colorNormal="@color/colorPrimary"
+                    app:fab_colorPressed="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/inserir_disciplina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"
+            app:fab_size="normal"
+            app:fab_label="Cadastrar Tarefas"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

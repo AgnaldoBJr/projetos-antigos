@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyClass v.1.0</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard">My Class</string>
+    <string name="title_activity_tipo_referencia_view">Novo Tipo de Referência</string>
+    <string name="title_activity_curso_view">Novo Curso</string>
+    <string name="title_activity_disciplina_view">Nova Disciplina</string>
+    <string name="title_activity_falta_view">Nova Falta</string>
+    <string name="title_activity_tarefa_view">Nova Tarefa</string>
+    <string name="title_activity_tipo_de_tarefa_view">Novo Tipo de Tarefa</string>
+    <string name="title_activity_referencia_view">Nova Referência</string>
+    <string name="title_activity_nota_view">Nova Nota</string>
+    <string name="title_activity_teste_spinner">TesteSpinner</string>
+    <string name="drawer_opened">Drawer Opened</string>
+    <string name="drawer_closed">Drawer Closed</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="nomeDisc"> Nome da Disciplina</string>
+    <string name="qtdAulasSemana"> Quantidade de Aulas da Disciplina</string>
+</resources>

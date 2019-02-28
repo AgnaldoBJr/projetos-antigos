@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.agnaldoburgojunior.myclassv1.Activitys.FaltaView">
+
+    <item android:icon="@drawable/ic_mode_edit"
+        android:id="@+id/action_alter"
+        android:title="@string/app_name"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+
+
+    <item android:icon="@drawable/ic_delete"
+        android:id="@+id/action_delete"
+        android:title="@string/app_name"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+</menu>

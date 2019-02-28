@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.agnaldoburgojunior.myclassv1.Activitys.ReferenciaView">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tipoReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_subject"
+            android:text=" Tipo de Referecia"/>
+
+        <Spinner
+            android:id="@+id/spinner_tiporef_em_referencias"
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"></Spinner>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/titulo_ref"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_text_format"
+        android:hint="Título"
+        android:maxLength="150"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/autor_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_text_format"
+        android:hint="Autor"
+        android:maxLength="80"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edicao_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_book"
+        android:hint="Edição"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ano_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_globe"
+        android:hint="Ano"
+        android:inputType="number"
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/url_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_settings_system_daydream"
+        android:hint="  URL"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/ac_ref"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_calendar_day"
+        android:hint="Data de Acesso"
+        android:inputType="date" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/comentarios_ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comentários"
+        android:drawableLeft="@drawable/ic_book"
+        android:inputType="textMultiLine"
+        android:maxLines="6" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/inserir_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"
+            app:fab_size="normal"
+            app:fab_label="Cadastrar Tarefas"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>
